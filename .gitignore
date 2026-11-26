@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+*.tgz
+
+# DSH agent memory / runtime data that must never be published
+.dsh-meow/

@@ -1,0 +1,12 @@
+# dsh-workspace-category bundle patch.
+#
+# One Host row is enough: it exposes the volatile Config schema the browser
+# half reads through ctx.configForms and gives the bundle a Loader entry.
+# The initial arrays are empty; Settings writes the user's categories and
+# assignments back into this entry.
+- insert:
+    - id: workspace-category
+      name: dsh-workspace-category
+      config:
+        categories: []
+        assignments: {}
